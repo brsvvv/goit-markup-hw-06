@@ -253,13 +253,12 @@ ol {
 }
 .skills-list {
   display: inline-flex;
+  flex-direction: column;
   align-items: flex-start;
   gap: 72px;
 }
 .skills-item {
-  /* width: calc((100% - 72px) / 4); */
   display: flex;
-  width: 396px;
   flex-direction: column;
   align-items: center;
   gap: 8px;
