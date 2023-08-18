@@ -397,23 +397,25 @@ ol {
 }
 
 .customers-section {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 .customers-title {
   font-size: 36px;
   line-height: 1.11;
-  color: #2e2f42;
   margin-bottom: 72px;
+  color: var(--navyblue, #2e2f42);
   text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
 }
 .cutomers-list {
-  display: flex;
-  gap: 24px;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .customers-item {
-  width: calc((100% - 120px) / 6);
-  height: 88px;
+  width: calc((100% - 16px) / 3);
 }
 
 .customers-link {
