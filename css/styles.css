@@ -268,13 +268,6 @@ ol {
   height: 64px;
 }
 .skills-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 112px;
-  background-color: #f4f4fd;
-  border-radius: 4px;
-  margin-bottom: 8px;
   display: none;
 }
 .skills-title {
@@ -324,7 +317,7 @@ ol {
 }
 .team-item {
   background-color: #ffffff;
-  width: ((100% - 72px) / 4);
+  margin-bottom: 72px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -346,7 +339,9 @@ ol {
 }
 .our-team-list {
   display: flex;
-  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .team-container {
