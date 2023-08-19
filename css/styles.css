@@ -101,7 +101,8 @@ ol {
   align-items: center;
 }
 .nav-menu-list {
-  display: flex;
+  display: none;
+  /* display: none; */
   gap: 40px;
 }
 
@@ -148,7 +149,7 @@ ol {
   margin-left: 332px;
 }
 .adress-menu {
-  display: flex;
+  display: none;
   gap: 40px;
 }
 
@@ -170,22 +171,44 @@ ol {
   line-height: 1.5em;
   letter-spacing: 0.02em;
 }
+.nav-container {
+}
+.menu-open-btn {
+  margin: auto;
+}
+.mob-menu {
+}
+.menu-close-btn {
+}
+.mob-menu-list {
+}
+.list {
+}
+.mob-menu-after {
+}
+.link {
+}
+.mob-adress-menu {
+}
+.menu-adress-item {
+}
+
 .container {
   padding-left: 16px;
   padding-right: 16px;
   margin: 0 auto;
 }
-.div-wrap {
+/* .div-wrap {
   display: flex;
   align-items: center;
-}
+} */
 
 .hero {
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/img-name.jpg);
+    url(../images/hero-bg-mob.jpg);
   padding: 188px 0;
   max-width: 1440px;
   background-repeat: no-repeat;
@@ -193,6 +216,17 @@ ol {
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-mob-2x.jpg);
+  }
 }
 .hero-title {
   color: #fff;
@@ -291,7 +325,7 @@ ol {
 }
 
 .tallents-section {
-  padding-bottom: 120px;
+  display: none;
 }
 .tallents {
   color: var(--navyblue, #2e2f42);
@@ -621,6 +655,7 @@ ol {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
 }
 .logo-container {
   /* margin-right: 120px; */
@@ -872,7 +907,6 @@ ol {
   gap: 16px;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 16px;
 }
 .footer-label {
 }
@@ -885,9 +919,10 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.04em;
   padding-left: 16px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  color: #ffffff;
+  border: 1px solid var(--white, #fff);
+  opacity: 0.3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .footer-input::placeholder {
   color: #ffffff;
@@ -913,7 +948,6 @@ ol {
   margin-left: 16px;
 }
 .footer-form-container {
-  /* margin-left: 80px; */
   display: flex;
   flex-direction: column;
   align-items: center;
