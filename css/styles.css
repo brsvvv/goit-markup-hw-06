@@ -271,8 +271,9 @@ ol {
   color: var(--header-menu-link);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mob-tel-contacts-link:is(:hover, :focus) {
-  color: var(--portfolio-filters);
+.mob-tel-contacts-link::hover,
+.mob-tel-contacts-link::focus {
+  color: var(--iris, #4d5ae5);
 }
 .mob-mail-contacts-link {
   font-size: 20px;
@@ -312,7 +313,7 @@ ol {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .mob-menu-soc-icon {
-  fill: var(--button-background-color);
+  fill: var(--iris, #4d5ae5);
 }
 .list {
 }
