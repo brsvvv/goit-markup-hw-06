@@ -2,9 +2,6 @@
   .container {
     max-width: 428px;
   }
-  .team-item {
-    margin-bottom: 72px;
-  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -36,6 +33,9 @@
     flex-wrap: wrap;
     align-items: flex-start;
     gap: 64px 24px;
+  }
+  .team-item {
+    margin-bottom: 0;
   }
   .cutomers-list {
     gap: 72px 24px;
@@ -149,5 +149,56 @@
   .customers-item {
     flex-wrap: nowrap;
     width: calc((100% - 120px) / 6);
+  }
+  .footer-form-text {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+  }
+  .container-form {
+    display: flex;
+    gap: 24px;
+  }
+  .footer-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: #ffffff;
+  }
+  .footer-input::placeholder {
+    color: #ffffff;
+  }
+  .footer-btn {
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4d5ae5;
+    border: none;
+    border-radius: 4px;
+  }
+  .subscribe-icon {
+    margin-left: 16px;
+  }
+  .footer-form-container {
+    margin-left: 80px;
   }
 }
