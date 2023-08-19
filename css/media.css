@@ -203,10 +203,15 @@
     margin-left: 16px;
   }
   .footer-form-container {
+    margin-left: 80px;
   }
   .footer-container {
     display: flex;
     align-items: baseline;
     flex-wrap: nowrap;
+    padding: 0 15px;
+  }
+  .footer-text {
+    width: 264px;
   }
 }
