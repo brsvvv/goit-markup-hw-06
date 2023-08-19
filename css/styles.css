@@ -176,7 +176,7 @@ ol {
   display: flex;
   justify-content: space-between;
 }
-.menu-open-btn {
+.open-menu-btn {
   display: block;
   border: none;
   background-color: transparent;
