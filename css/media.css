@@ -2,6 +2,9 @@
   .container {
     max-width: 428px;
   }
+  .footer-input {
+    width: 398px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -63,11 +66,12 @@
     letter-spacing: 0.02em;
   }
 
-  /* .adress-header {
+  .adress-header {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-style: normal;
     margin-left: 121px;
-  } */
+    display: flex;
+  }
 
   .adress-menu {
     display: flex;
@@ -87,11 +91,6 @@
   .adress-item:hover,
   .adress-item:focus {
     color: var(--ocean, #404bbf);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    line-height: 1.5em;
-    letter-spacing: 0.02em;
   }
   .adress-item {
     flex-direction: column;
@@ -278,11 +277,12 @@
     flex-direction: row;
     gap: 40px;
   }
-  /* .adress-header {
+  .adress-header {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-style: normal;
     margin-left: 121px;
-  } */
+    display: block;
+  }
   .adress-item {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--slate, #434455);
@@ -295,11 +295,6 @@
   .adress-item:hover,
   .adress-item:focus {
     color: var(--ocean, #404bbf);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    line-height: 1.5em;
-    letter-spacing: 0.02em;
   }
   .customers-container {
     max-width: 1158px;

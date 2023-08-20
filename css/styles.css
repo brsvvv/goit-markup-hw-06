@@ -166,11 +166,6 @@ ol {
 .adress-item:hover,
 .adress-item:focus {
   color: var(--ocean, #404bbf);
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  line-height: 1.5em;
-  letter-spacing: 0.02em;
 }
 .nav-container {
   display: flex;
@@ -1075,7 +1070,7 @@ ol {
 .footer-label {
 }
 .footer-input {
-  width: 398px;
+  width: 290px;
   height: 40px;
   border: 1px solid #ffffff;
   background-color: transparent;
