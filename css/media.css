@@ -114,6 +114,10 @@
         url(../images/hero-bg-tab-2x.jpg);
     }
   }
+  .hero-title {
+    width: 496px;
+    font-size: 56px;
+  }
   .customers-container {
     max-width: 584px;
   }
@@ -215,6 +219,9 @@
         ),
         url(../images/hero-bg-desktop-2x.jpg);
     }
+  }
+  .hero-title {
+    font-size: 56px;
   }
   .menu-open-btn {
     display: none;
