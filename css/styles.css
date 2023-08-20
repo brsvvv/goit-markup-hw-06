@@ -203,7 +203,7 @@ ol {
 .mob-menu-social {
   margin-top: auto;
 }
-.close-menu-btn {
+/* .close-menu-btn {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -228,7 +228,7 @@ ol {
 }
 .close-menu-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 .mob-menu-item:not(:last-child) {
   margin-bottom: 40px;
 }
@@ -243,7 +243,7 @@ ol {
 }
 .mob-menu-link:hover,
 .mob-menu-link:focus {
-  color: var(--header-menu-link);
+  color: var(--ocean, #404bbf);
 }
 .mob-menu-contacts {
   font-style: normal;
@@ -268,12 +268,11 @@ ol {
   font-weight: 700;
   line-height: 40px;
   letter-spacing: 0.02em;
-  color: var(--header-menu-link);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--ocean, #404bbf);
 }
-.mob-tel-contacts-link::hover,
-.mob-tel-contacts-link::focus {
-  color: var(--iris, #4d5ae5);
+.mob-tel-contacts-link:is(:hover, :focus) {
+  color: var(--portfolio-filters);
 }
 .mob-mail-contacts-link {
   font-size: 20px;
@@ -285,7 +284,7 @@ ol {
 }
 
 .mob-mail-contacts-link:is(:hover, :focus) {
-  color: var(--portfolio-filters);
+  color: var(--ocean, #404bbf);
 }
 .mob-menu-soc-list {
   display: flex;
@@ -318,6 +317,7 @@ ol {
 .list {
 }
 .mob-menu-after {
+  color: var(--ocean, #404bbf);
 }
 .link {
 }
@@ -713,6 +713,37 @@ ol {
   border: 1px solid transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.close-menu-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #e7e9fc;
+  border-radius: 24px;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 32px;
+}
+.close-menu-btn:hover,
+.close-menu-btn:focus {
+  background-color: #404bbf;
+  border: none;
+}
+.close-menu-btn:hover .close-menu-icon,
+.close-menu-btn:focus .close-menu-icon {
+  fill: var(--white);
+}
+.close-menu-icon {
+  transition: fill;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .service-list {
   display: flex;
